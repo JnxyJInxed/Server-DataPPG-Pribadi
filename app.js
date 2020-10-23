@@ -1,3 +1,4 @@
+var PORT = process.env.PORT || 3000;
 //import package
 //server
 const express = require('express');
@@ -41,4 +42,4 @@ mongoose.connect(
 
 
 //start LISTEN AT PORT:
-app.listen(8080, "0.0.0.0", ()=> console.log('Server running at http://0.0.0.0:8080/'));
+app.listen(PORT, ()=> console.log('Server running at http://0.0.0.0:8080/'));
